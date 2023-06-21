@@ -1,6 +1,6 @@
 package com.sopline.urlshorter.service;
 
-import com.sopline.urlshorter.repository.RepositoryUrl;
+import com.sopline.urlshorter.repository.UrlShortenerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +8,9 @@ import java.util.Random;
 
 @Service
 @AllArgsConstructor
-public class ServiceUrl {
+public class UrlShortenerService {
 
-    private final RepositoryUrl repositoryUrl;
+    private final UrlShortenerRepository repositoryUrl;
 
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     private static final int BASE = ALPHABET.length();

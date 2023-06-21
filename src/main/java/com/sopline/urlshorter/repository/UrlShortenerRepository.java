@@ -1,9 +1,9 @@
 package com.sopline.urlshorter.repository;
 
-import com.sopline.urlshorter.entity.EntityUrl;
+import com.sopline.urlshorter.entity.UrlShortenerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RepositoryUrl extends JpaRepository<EntityUrl, String> {
+public interface UrlShortenerRepository extends JpaRepository<UrlShortenerEntity, String> {
 }

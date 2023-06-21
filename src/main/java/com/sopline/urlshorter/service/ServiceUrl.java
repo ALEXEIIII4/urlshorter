@@ -17,6 +17,9 @@ public class ServiceUrl {
     // длина короткого URL-адреса
     private static final int LENGTH = 7;
 
+    /**
+     * Метод для обрезки домена из URL
+     */
     static public String cutHost(String shouldBeShort) {
         String host = null;
         int count = 0;
@@ -31,7 +34,9 @@ public class ServiceUrl {
         return host;
     }
 
-
+    /**
+     * Метод для форматирование короткого URL
+     */
     public String makeShortUrl(String longUrl) {
         Random random = new Random();
         StringBuilder sb = new StringBuilder();

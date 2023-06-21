@@ -17,7 +17,7 @@ public class ControllerUrl {
     private final ServiceUrl serviceEncode;
 
     @PostMapping("/longToken")
-    public ResponseEntity<String> getShortUrl(@RequestBody EntityUrl entityUrl){
+    public ResponseEntity<String> createShortUrl(@RequestBody EntityUrl entityUrl){
         return ResponseEntity.ok(serviceEncode.makeShortUrl(entityUrl.getLongUrl()));
     }
 
